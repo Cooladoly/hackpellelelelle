@@ -1,0 +1,99 @@
+<!doctype html>
+<!--
+  Source for public/og-image.png (the link-preview card, 1200x630).
+  Not part of the site build. To regenerate: run `npm run dev`, open
+  http://localhost:5173/tools/og.html in a 1200x630 window (with reduced motion on, so the
+  header's pins are already in place) and screenshot it.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>hack::peel preview card</title>
+    <script type="module" src="/src/og.ts"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      body {
+        position: relative;
+        background: var(--color-ground);
+      }
+      .copy {
+        position: absolute;
+        left: 80px;
+        top: 76px;
+      }
+      /* the full logo: the name with glowing colons and the copper bar centred under it */
+      .copy .lockup {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 168px;
+      }
+      .copy .tagline {
+        margin: 30px 0 0;
+        font-size: 48px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+      .copy .meta {
+        margin: 18px 0 0;
+        font-size: 28px;
+        line-height: 1.4;
+        color: var(--color-ink-2);
+      }
+      /* the clock chip from the home page, its LEDs reading 34 */
+      .u1 {
+        position: absolute;
+        right: 96px;
+        top: 330px;
+        width: 250px;
+        height: 162px;
+      }
+      .u1 .chip {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+      }
+      .u1 .pins {
+        top: 20px;
+        bottom: 20px;
+      }
+      .rule {
+        position: absolute;
+        left: 80px;
+        right: 80px;
+        bottom: 28px;
+      }
+      .rule .hp-label {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="copy">
+      <div class="lockup">
+        <div class="wordmark wordmark-glow">hack<span class="colon">::</span>peel</div>
+        <span class="logo-bar"></span>
+      </div>
+      <p class="tagline">Build the Future in 34 Hours</p>
+      <p class="meta">Saturday, December 12th, 2026<br />The Woodlands Secondary School</p>
+    </div>
+    <div class="u1" aria-hidden="true">
+      <div class="chip"><span id="led"></span></div>
+      <div class="pins pins-l">
+        <span class="pin"></span><span class="pin"></span><span class="pin"></span><span class="pin"></span><span class="pin"></span>
+      </div>
+      <div class="pins pins-r">
+        <span class="pin"></span><span class="pin"></span><span class="pin"></span><span class="pin"></span><span class="pin"></span>
+      </div>
+    </div>
+    <div class="rule" id="rule"></div>
+  </body>
+</html>

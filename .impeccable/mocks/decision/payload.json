@@ -1,0 +1,132 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned The Assembly Board. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Assembly Board",
+      "kicker": "THE ROLL",
+      "lineage": "bare circuit boards: soldermask, silkscreen, copper",
+      "thesis": "The whole site is one circuit board, and every control is a part you could solder.",
+      "palette": ["#0a0e12", "#e9eff3", "#00bfff", "#3a4656"],
+      "materials": ["matte soldermask", "white silkscreen"],
+      "viewport": "A black board: wordmark in silkscreen, the countdown as an LED-matrix chip, cyan traces routed to the Register switch.",
+      "risk": "Circuit-trace backdrops are a stock effect; only strict routing and real part labels keep it from being one.",
+      "raised": [
+        {
+          "from": "challenger-clay-ceramics-fracture-glaze-river-shelf",
+          "raise": "One cyan trace runs the full height of the page and only stops where it powers something."
+        },
+        {
+          "from": "challenger-growth-metamorphosis-branching-ikebana-ma-arrangement",
+          "raise": "Empty board between parts is designed keep-out space, never filler."
+        },
+        {
+          "from": "challenger-design-canon-futurist-bolted-book",
+          "raise": "Loudness sets scale: 34 and the date are cut huge, and everything else stays quiet."
+        },
+        {
+          "from": "challenger-operate-b-exposure-record-zone-sheets",
+          "raise": "Every neutral comes from one stepped ramp, so each surface is a measured step."
+        }
+      ],
+      "html": ".impeccable/mocks/decision/assigned.html"
+    },
+    {
+      "id": "model-pick",
+      "label": "The Match Field",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "FIRST Robotics competition fields and pit signage",
+      "thesis": "Team 4308's home turf: a scoreboard clock, tape-line zones and bumper numerals.",
+      "palette": ["#0b0f14", "#ffffff", "#00bfff", "#1a2634"],
+      "materials": ["gaffer tape", "scoreboard segments"],
+      "viewport": "The event as a match: a segmented clock across the top, a taped field outline, stats as bumper numbers.",
+      "risk": "Lands hardest with robotics insiders; everyone else has to read it as a sports scoreboard.",
+      "html": ".impeccable/mocks/decision/model-pick.html"
+    },
+    {
+      "id": "challenger-vernacular-ephemera-boarding-pass-and-gate-board",
+      "label": "Gate Board and Boarding Pass",
+      "verdict": "competitive",
+      "lineage": "airport departure boards and boarding passes",
+      "thesis": "Register is your boarding pass; the schedule is a live gate board counting down to departure.",
+      "palette": ["#101216", "#eceff1", "#00bfff", "#5b6573"],
+      "materials": ["monospaced board", "perforated pass"],
+      "viewport": "A tall boarding pass beside a gate board whose top row is the countdown.",
+      "case": "Fuses cleanly: countdown, schedule and sign-up map onto board and pass; it holds clarity but loses the maker identity.",
+      "risk": "Airport boards are a familiar trope; a loose column grid reads as a template.",
+      "hero": "https://impeccable.style/worlds/cards/vernacular-ephemera-boarding-pass-and-gate-board-hero.webp",
+      "html": ".impeccable/mocks/decision/gate-board.html"
+    },
+    {
+      "id": "challenger-signals-instruments-drum-machine-step-row",
+      "label": "The Step Row",
+      "verdict": "competitive",
+      "lineage": "early-80s rhythm machine step sequencers",
+      "thesis": "The 34 hours are 34 keys in one unbroken row, and a chase light shows where now is.",
+      "palette": ["#101215", "#d9dde1", "#00bfff", "#2c3036"],
+      "materials": ["charcoal panel", "LED keys"],
+      "viewport": "A hardware panel: segmented countdown, knobs, and a 34-key row lit up to the current hour.",
+      "case": "Fuses well: 34 keys are 34 hours; it loses on audience identification outside music makers.",
+      "risk": "Reads as a music product unless every label speaks in the event's own words.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-drum-machine-step-row-hero.webp",
+      "html": ".impeccable/mocks/decision/step-row.html"
+    },
+    {
+      "id": "challenger-clay-ceramics-fracture-glaze-river-shelf",
+      "label": "Glaze Shelf",
+      "verdict": "declined",
+      "lineage": "kiln shelves and fracture glazes",
+      "palette": ["#e9e4da", "#1f4fa3", "#9db7e0", "#2b2b2b"],
+      "materials": ["kiln shelf", "cobalt glaze"],
+      "case": "Fuses poorly: students do not identify with ceramics, and glaze runs bury the facts.",
+      "kept": "One accent flow that stops with intent.",
+      "hero": "https://impeccable.style/worlds/cards/clay-ceramics-fracture-glaze-river-shelf-hero.webp"
+    },
+    {
+      "id": "challenger-growth-metamorphosis-branching-ikebana-ma-arrangement",
+      "label": "The Alcove",
+      "verdict": "declined",
+      "lineage": "ikebana in a tokonoma alcove",
+      "palette": ["#e6e0d3", "#5a5448", "#3b63b8", "#6a4b2a"],
+      "materials": ["plaster", "bronze"],
+      "case": "Fuses poorly: deliberate emptiness hides the date and the Register action.",
+      "kept": "Emptiness that is designed, not left over.",
+      "hero": "https://impeccable.style/worlds/cards/growth-metamorphosis-branching-ikebana-ma-arrangement-hero.webp"
+    },
+    {
+      "id": "challenger-operate-b-exposure-record-zone-sheets",
+      "label": "Exposure Record",
+      "verdict": "declined",
+      "lineage": "darkroom exposure records",
+      "palette": ["#1b1b1d", "#d8d6d0", "#c0267f", "#6b6a66"],
+      "materials": ["tracing paper", "hatching"],
+      "case": "Fuses poorly: it is a working-field world for an operate task, and this is a persuade page.",
+      "kept": "One stepped tonal ramp for every neutral.",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-exposure-record-zone-sheets-hero.webp"
+    },
+    {
+      "id": "challenger-design-canon-futurist-bolted-book",
+      "label": "The Bolted Book",
+      "verdict": "declined",
+      "lineage": "futurist wood-type books",
+      "palette": ["#efe6d2", "#141414", "#c8312a", "#9aa0a6"],
+      "materials": ["wood type", "aluminum bolts"],
+      "case": "Fuses poorly: tilted, shouted type fights a clear Register path and a parent's need to read.",
+      "kept": "Loudness sets scale.",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-futurist-bolted-book-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code" },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A dark hackathon page with a centred countdown hero, feature cards and a sponsor strip, at full craft.",
+    "palette": ["#0a0a0a", "#ffffff", "#00bfff", "#1e293b"],
+    "materials": ["glass cards", "neon glow"],
+    "viewport": "The arrangement a visitor expects: centred wordmark, countdown cards, one big button.",
+    "risk": "Close to the site you started from, only better built."
+  },
+  "steer": true
+}

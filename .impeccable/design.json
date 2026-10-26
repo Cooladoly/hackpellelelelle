@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T03:00:00Z",
+  "title": "Design System: hack::peel",
+  "extensions": {
+    "colorMeta": {
+      "n0": {
+        "role": "neutral",
+        "displayName": "Part Body",
+        "canonical": "oklch(0.105 0.012 238)",
+        "tonalRamp": [
+          "oklch(0.105 0.012 238)",
+          "oklch(0.145 0.012 238)",
+          "oklch(0.185 0.012 238)",
+          "oklch(0.23 0.012 238)",
+          "oklch(0.29 0.012 238)",
+          "oklch(0.36 0.012 238)",
+          "oklch(0.44 0.012 238)",
+          "oklch(0.55 0.012 238)",
+          "oklch(0.66 0.012 238)",
+          "oklch(0.78 0.01 238)",
+          "oklch(0.965 0.004 238)"
+        ]
+      },
+      "n1": {
+        "role": "neutral",
+        "displayName": "Soldermask",
+        "canonical": "oklch(0.145 0.012 238)"
+      },
+      "n2": {
+        "role": "neutral",
+        "displayName": "Raised Mask",
+        "canonical": "oklch(0.185 0.012 238)"
+      },
+      "n3": {
+        "role": "neutral",
+        "displayName": "Cap",
+        "canonical": "oklch(0.23 0.012 238)"
+      },
+      "n4": {
+        "role": "neutral",
+        "displayName": "Board Rule",
+        "canonical": "oklch(0.29 0.012 238)"
+      },
+      "n5": {
+        "role": "neutral",
+        "displayName": "Neutral Plinth",
+        "canonical": "oklch(0.36 0.012 238)"
+      },
+      "n6": {
+        "role": "neutral",
+        "displayName": "Strong Rule",
+        "canonical": "oklch(0.44 0.012 238)"
+      },
+      "n7": {
+        "role": "neutral",
+        "displayName": "Field Edge",
+        "canonical": "oklch(0.55 0.012 238)"
+      },
+      "n8": {
+        "role": "neutral",
+        "displayName": "Silkscreen Faint",
+        "canonical": "oklch(0.66 0.012 238)"
+      },
+      "n9": {
+        "role": "neutral",
+        "displayName": "Silkscreen Dim",
+        "canonical": "oklch(0.78 0.01 238)"
+      },
+      "n10": {
+        "role": "neutral",
+        "displayName": "Silkscreen",
+        "canonical": "oklch(0.965 0.004 238)"
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Soldermask (ground = n1)",
+        "canonical": "var(--color-n1)"
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised Mask (raised = n2)",
+        "canonical": "var(--color-n2)"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Board Rule (line = n4)",
+        "canonical": "var(--color-n4)"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Strong Rule (line-strong = n6)",
+        "canonical": "var(--color-n6)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Silkscreen (ink = n10)",
+        "canonical": "var(--color-n10)"
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Silkscreen Dim (ink-2 = n9)",
+        "canonical": "var(--color-n9)"
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Silkscreen Faint (ink-3 = n8)",
+        "canonical": "var(--color-n8)"
+      },
+      "signal": {
+        "role": "primary",
+        "displayName": "Copper Cyan",
+        "canonical": "#00bfff",
+        "tonalRamp": [
+          "oklch(0.2 0.06 232)",
+          "oklch(0.3 0.09 232)",
+          "oklch(0.42 0.11 232)",
+          "oklch(0.54 0.13 232)",
+          "oklch(0.64 0.14 232)",
+          "oklch(0.74 0.15 232)",
+          "oklch(0.84 0.1 225)",
+          "oklch(0.95 0.04 220)"
+        ]
+      },
+      "signal-bright": {
+        "role": "primary",
+        "displayName": "Hot Copper",
+        "canonical": "#4dd2ff"
+      },
+      "signal-hot": {
+        "role": "primary",
+        "displayName": "White-hot Copper",
+        "canonical": "#d6f6ff",
+        "note": "Only the flash of a clock LED as it lights (read by the canvas in LedRow); never a fill or text colour."
+      },
+      "on-signal": {
+        "role": "primary",
+        "displayName": "Pour Ink",
+        "canonical": "oklch(0.16 0.02 235)"
+      },
+      "on-signal-hover": {
+        "role": "primary",
+        "displayName": "Pour Ink Hover",
+        "canonical": "oklch(0.22 0.025 235)"
+      },
+      "pad": {
+        "role": "secondary",
+        "displayName": "Pad Silver",
+        "canonical": "oklch(0.84 0.07 218)",
+        "tonalRamp": [
+          "oklch(0.2 0.03 218)",
+          "oklch(0.32 0.04 218)",
+          "oklch(0.44 0.05 218)",
+          "oklch(0.56 0.06 218)",
+          "oklch(0.68 0.07 218)",
+          "oklch(0.78 0.07 218)",
+          "oklch(0.84 0.07 218)",
+          "oklch(0.95 0.03 218)"
+        ],
+        "note": "Clock chip pins, the empty socket's pins, and the header pins on the link-preview card (tools/og.html) only."
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Fault Red",
+        "canonical": "oklch(0.74 0.16 25)",
+        "tonalRamp": [
+          "oklch(0.2 0.06 25)",
+          "oklch(0.32 0.1 25)",
+          "oklch(0.44 0.13 25)",
+          "oklch(0.56 0.15 25)",
+          "oklch(0.66 0.16 25)",
+          "oklch(0.74 0.16 25)",
+          "oklch(0.84 0.1 25)",
+          "oklch(0.95 0.03 25)"
+        ]
+      },
+      "umbra": {
+        "role": "neutral",
+        "displayName": "Umbra",
+        "canonical": "oklch(0 0 0)"
+      },
+      "plinth-signal": {
+        "role": "primary",
+        "displayName": "Cyan Plinth",
+        "canonical": "oklch(0.5 0.1 225)"
+      },
+      "plinth-dark": {
+        "role": "primary",
+        "displayName": "Pour Plinth",
+        "canonical": "oklch(0.32 0.04 235)"
+      },
+      "trace": {
+        "role": "neutral",
+        "displayName": "Buried Copper",
+        "canonical": "oklch(0.29 0.012 238)",
+        "purpose": "Traces seen through the soldermask (n4): the chip's fan-out, page-head fields, patches under section headings and beside short content, and margin trunks."
+      },
+      "trace-via": {
+        "role": "neutral",
+        "displayName": "Buried Via",
+        "canonical": "oklch(0.36 0.012 238)",
+        "purpose": "The ring of a via on buried copper (n5), filled with the ground colour."
+      }
+    },
+    "typographyMeta": {
+      "logo": {
+        "displayName": "Logo",
+        "purpose": "The original hack::peel logo in the home hero: Space Grotesk 700, colons in signal with a breathing glow, the copper bar centred under it. 1.5rem in the nav, 2.5rem in the footer."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page heads, balanced; hack::peel inside a head is set as the logo."
+      },
+      "pour": {
+        "displayName": "Pour",
+        "purpose": "The closing call to action on the copper pour."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "The four stat figures, one size."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section heads, including Organised By:."
+      },
+      "tagline": {
+        "displayName": "Tagline",
+        "purpose": "Build the Future in 34 Hours, under the hero logo."
+      },
+      "name": {
+        "displayName": "Name",
+        "purpose": "The organiser's name in its panel."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Item heads: reasons, values, principles, timeline entries."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The sentence under a head, max 40rem, ink-2."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, max 62ch, ink-2."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "The label on every switch; 0.9375rem on the header switch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field labels (650) and nav links (500); stat captions are 1rem at 500 in ink-2."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Secondary notes and the sponsor reel's pause control, ink-3."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "The clock's Days/Hours/Minutes/Seconds labels, ink-2."
+      },
+      "numeric": {
+        "displayName": "Numeric",
+        "purpose": "Schedule times, timeline years and tier prices; mono with tabular figures."
+      },
+      "step-number": {
+        "displayName": "Step Number",
+        "purpose": "The mono number under each registration LED-bar segment, ink-3."
+      },
+      "preview-logo": {
+        "displayName": "Preview Logo",
+        "purpose": "The logo on the link-preview card (tools/og.html) only."
+      },
+      "preview-tagline": {
+        "displayName": "Preview Tagline",
+        "purpose": "The tagline on the link-preview card only."
+      },
+      "preview-meta": {
+        "displayName": "Preview Meta",
+        "purpose": "The date and venue on the link-preview card only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 14px 18px -12px color-mix(in oklab, var(--color-umbra) 85%, transparent)",
+        "purpose": "A switch at rest; also under the day tabs' cap."
+      },
+      {
+        "name": "pressed",
+        "value": "0 6px 8px -8px color-mix(in oklab, var(--color-umbra) 85%, transparent)",
+        "purpose": "A switch held down; the plinth shrinks to 1px."
+      },
+      {
+        "name": "chip",
+        "value": "0 22px 34px -22px color-mix(in oklab, var(--color-umbra) 90%, transparent)",
+        "purpose": "The clock chip sitting on the board."
+      },
+      {
+        "name": "pour-switch",
+        "value": "0 8px 12px -10px color-mix(in oklab, var(--color-on-signal) 75%, transparent)",
+        "purpose": "The dark switch on the copper pour."
+      },
+      {
+        "name": "cap-face",
+        "value": "inset 0 2px 0 color-mix(in oklab, var(--color-ink) 10%, transparent), var(--shadow-lift)",
+        "purpose": "The raised cap on the selected day tab."
+      },
+      {
+        "name": "led-dot",
+        "value": "0 0 8px 1px color-mix(in oklab, var(--color-signal) 50%, transparent)",
+        "purpose": "A lit LED dot (Why reasons, sponsor tiers)."
+      },
+      {
+        "name": "led-dip",
+        "value": "0 0 7px 1px color-mix(in oklab, var(--color-signal) 55%, transparent)",
+        "purpose": "The lamp of an open DIP switch."
+      },
+      {
+        "name": "led-bar",
+        "value": "0 0 10px color-mix(in oklab, var(--color-signal) 55%, transparent)",
+        "purpose": "A lit segment of the registration LED bar graph."
+      },
+      {
+        "name": "pulse-halo",
+        "value": "a 7px stroke of signal at 30% under the 2px pulse",
+        "purpose": "The soft light around a pulse on buried copper."
+      },
+      {
+        "name": "logo-glow",
+        "value": "text-shadow: 0 0 10px color-mix(in oklab, var(--color-signal) 50%, transparent)",
+        "purpose": "The hero logo's colons; breathes to 0 0 20px var(--color-signal)."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The single easing for every transition and entrance."
+      },
+      {
+        "name": "state",
+        "value": "0.15s",
+        "purpose": "Colour, border and background state changes."
+      },
+      {
+        "name": "switch-press",
+        "value": "0.04s",
+        "purpose": "Switch travel on :active; the release uses transform 0.12s on the expo ease."
+      },
+      {
+        "name": "nav-underline",
+        "value": "transform 0.25s var(--ease-expo)",
+        "purpose": "The current page's copper underline grows in (scaleX)."
+      },
+      {
+        "name": "spine-draw",
+        "value": "1.7s var(--ease-expo) 0.15s",
+        "purpose": "The page spine trace draws down on load."
+      },
+      {
+        "name": "power-up",
+        "value": "0.9s var(--ease-expo)",
+        "purpose": "Hero parts read in, from opacity 0 and brightness 2.2, staggered by --d."
+      },
+      {
+        "name": "enter-wipe",
+        "value": "1.1s var(--ease-expo)",
+        "purpose": "The wordmark is wiped on by a clip-path."
+      },
+      {
+        "name": "colon-blink",
+        "value": "1.2s steps(1, end) 0.55s",
+        "purpose": "The logo's colons blink on once like LEDs."
+      },
+      {
+        "name": "colon-glow",
+        "value": "2.5s ease-in-out 1.75s infinite",
+        "purpose": "Then they breathe, 10px to 20px glow, as on the live site."
+      },
+      {
+        "name": "copper-pulse",
+        "value": "linear, (length + 926px) / 220px per second, infinite, on screen only",
+        "purpose": "A 26px cyan dash runs a buried trace at 220px/s, then waits about 4s."
+      },
+      {
+        "name": "marquee",
+        "value": "70s linear infinite per pass",
+        "purpose": "The sponsor tape feeds; it pauses under the pointer, focus, or its Pause control."
+      },
+      {
+        "name": "clock-scan",
+        "value": "canvas, once on first paint, then per-dot ticks",
+        "purpose": "The clock matrix scans once, then switches individual dots as values change."
+      },
+      {
+        "name": "stat-roll",
+        "value": "NumberFlow 1.5s var(--ease-expo), once",
+        "purpose": "Stat figures roll up from zero when the strip enters view."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 0.7s var(--ease-expo), 90ms stagger",
+        "purpose": "Scroll reveal for [data-reveal]."
+      },
+      {
+        "name": "rule-draw",
+        "value": "transform 1.2s var(--ease-expo)",
+        "purpose": "A section's board rule draws across as it arrives; its via scales in after 0.3s."
+      },
+      {
+        "name": "timeline-lay",
+        "value": "transform 0.9s var(--ease-expo), 0.55s + 0.5s per segment",
+        "purpose": "The About timeline's trace is laid segment by segment."
+      },
+      {
+        "name": "step-tag",
+        "value": "clip-path and transform 0.4s var(--ease-expo)",
+        "purpose": "The registration step tag re-clips and slides."
+      },
+      {
+        "name": "accordion",
+        "value": "0.3s down / 0.22s up, var(--ease-expo)",
+        "purpose": "DIP switch rows opening and closing."
+      },
+      {
+        "name": "pop-in",
+        "value": "0.18s var(--ease-expo)",
+        "purpose": "Tooltips."
+      },
+      {
+        "name": "sheet",
+        "value": "0.45s in / 0.3s out, var(--ease-expo)",
+        "purpose": "The mobile nav sheet."
+      },
+      {
+        "name": "cap-spring",
+        "value": "spring stiffness 380, damping 30, mass 0.9",
+        "purpose": "The day tabs' cap sliding between days."
+      },
+      {
+        "name": "view-transition",
+        "value": "0.22s",
+        "purpose": "Route changes."
+      },
+      {
+        "name": "gate",
+        "value": "@media (prefers-reduced-motion: no-preference) and html:not(.calm)",
+        "purpose": "Every animation sits behind both; ATMOSPHERE_ON = false in src/data/site.ts sets html.calm."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "nav",
+        "value": "900px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Switch",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The cyan plinth switch for the main action (Register Now).",
+      "html": "<button class=\"ds-btn1\">Register Now <span class=\"ds-arrow\" aria-hidden=\"true\">&rarr;</span></button>",
+      "css": ".ds-btn1 { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; min-height: 3rem; padding: 0 1.5rem; border: 1px solid transparent; border-bottom: 3px solid var(--color-n4); border-radius: 0; font-family: var(--font-sans); font-size: 1rem; font-weight: 700; line-height: 1; letter-spacing: -0.005em; cursor: pointer; box-shadow: var(--shadow-lift); transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.12s var(--ease-expo); } .ds-btn1:active { transform: translateY(2px); border-bottom-width: 1px; box-shadow: var(--shadow-pressed); transition-duration: 0.04s; } .ds-btn1:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 3px; } .ds-btn1 { background: var(--color-signal); color: var(--color-on-signal); border-bottom-color: var(--color-plinth-signal); } .ds-btn1:hover { background: var(--color-signal-bright); } .ds-arrow { transition: transform 0.3s var(--ease-expo); } .ds-btn1:hover .ds-arrow { transform: translateX(4px); }"
+    },
+    {
+      "name": "Secondary Switch",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "The outlined plinth switch for a second action (View Schedule).",
+      "html": "<button class=\"ds-btn2\">View Schedule</button>",
+      "css": ".ds-btn2 { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; min-height: 3rem; padding: 0 1.5rem; border: 1px solid transparent; border-bottom: 3px solid var(--color-n4); border-radius: 0; font-family: var(--font-sans); font-size: 1rem; font-weight: 700; line-height: 1; letter-spacing: -0.005em; cursor: pointer; box-shadow: var(--shadow-lift); transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.12s var(--ease-expo); } .ds-btn2:active { transform: translateY(2px); border-bottom-width: 1px; box-shadow: var(--shadow-pressed); transition-duration: 0.04s; } .ds-btn2:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 3px; } .ds-btn2 { background: transparent; color: var(--color-ink); border-color: color-mix(in oklab, var(--color-ink) 70%, transparent); border-bottom-color: var(--color-n5); } .ds-btn2:hover { border-color: var(--color-signal); border-bottom-color: var(--color-plinth-signal); color: var(--color-signal); }"
+    },
+    {
+      "name": "Pour Switch",
+      "kind": "button",
+      "refersTo": "button-dark",
+      "description": "The dark plinth switch that sits on the cyan copper pour.",
+      "html": "<div style=\"background: var(--color-signal); padding: 2rem;\"><button class=\"ds-btn3\">Register Now</button></div>",
+      "css": ".ds-btn3 { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem; min-height: 3rem; padding: 0 1.5rem; border: 1px solid transparent; border-bottom: 3px solid var(--color-n4); border-radius: 0; font-family: var(--font-sans); font-size: 1rem; font-weight: 700; line-height: 1; letter-spacing: -0.005em; cursor: pointer; box-shadow: var(--shadow-lift); transition: background-color 0.15s, border-color 0.15s, color 0.15s, transform 0.12s var(--ease-expo); } .ds-btn3:active { transform: translateY(2px); border-bottom-width: 1px; box-shadow: var(--shadow-pressed); transition-duration: 0.04s; } .ds-btn3:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 3px; } .ds-btn3 { background: var(--color-on-signal); color: var(--color-ink); border-bottom-color: var(--color-plinth-dark); box-shadow: 0 8px 12px -10px color-mix(in oklab, var(--color-on-signal) 75%, transparent); } .ds-btn3:hover { background: var(--color-on-signal-hover); } .ds-btn3:focus-visible { outline-color: var(--color-on-signal); }"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "A text field: an n0 well with an n7 edge.",
+      "html": "<label class=\"ds-field\"><span>Email</span><input class=\"ds-input\" placeholder=\"you@example.com\"></label>",
+      "css": ".ds-field { display: grid; gap: 0.5rem; font-family: var(--font-sans); color: var(--color-ink); } .ds-field > span { font-size: 0.9375rem; font-weight: 650; } .ds-input { width: 100%; min-height: 3rem; padding: 0 0.875rem; border: 1px solid var(--color-n7); border-radius: var(--radius-field); background: var(--color-n0); color: var(--color-ink); font: inherit; transition: border-color 0.15s, background-color 0.15s; } .ds-input::placeholder { color: var(--color-ink-3); } .ds-input:hover { border-color: var(--color-n9); } .ds-input:focus-visible { border-color: var(--color-signal); outline: 2px solid var(--color-signal); outline-offset: 1px; } .ds-input[aria-invalid='true'] { border-color: var(--color-danger); }"
+    },
+    {
+      "name": "Header Nav",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Plain nav links; the current page is underlined in copper on the header's lower edge.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-link\" href=\"#\">About</a><a class=\"ds-nav-link\" href=\"#\" aria-current=\"page\">Schedule</a><a class=\"ds-nav-link\" href=\"#\">Sponsors</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2rem; align-items: center; height: 4rem; padding: 0 1.5rem; background: var(--color-n1); border-bottom: 1px solid var(--color-line-strong); font-family: var(--font-sans); } .ds-nav-link { position: relative; padding: 0.5rem 0; font-size: 0.9375rem; font-weight: 500; color: var(--color-ink-2); text-decoration: none; transition: color 0.15s; } .ds-nav-link::after { content: ''; position: absolute; left: 0; right: 0; bottom: -0.82rem; height: 2px; background: var(--color-signal); transform: scaleX(0); transition: transform 0.25s var(--ease-expo); } .ds-nav-link:hover, .ds-nav-link[aria-current='page'] { color: var(--color-ink); } .ds-nav-link[aria-current='page']::after { transform: none; } .ds-nav-link:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "Clock Chip",
+      "kind": "custom",
+      "refersTo": "clock-chip",
+      "description": "The one signature part: an IC body with pin-1 ring and pad-silver pins whose face is an LED dot matrix (canvas on the site; static dots here).",
+      "html": "<div class=\"ds-chip\" role=\"img\" aria-label=\"Clock chip\"><span class=\"ds-pin1\"></span><span class=\"ds-pins ds-pins-l\"><i></i><i></i><i></i><i></i></span><span class=\"ds-pins ds-pins-r\"><i></i><i></i><i></i><i></i></span><div class=\"ds-face\"><span class=\"ds-matrix\"></span><span class=\"ds-cap\"><span>Days</span><span>Hours</span></span></div></div>",
+      "css": ".ds-chip { position: relative; width: 16rem; margin: 0 1.25rem; border: 1px solid var(--color-n6); border-radius: var(--radius-part); background: linear-gradient(color-mix(in oklab, var(--color-ink) 5%, transparent), transparent 38%), var(--color-n0); box-shadow: var(--shadow-chip); font-family: var(--font-sans); } .ds-pin1 { position: absolute; top: 0.75rem; left: 0.75rem; width: 0.7rem; height: 0.7rem; border: 1.5px solid var(--color-n7); border-radius: 50%; } .ds-pins { position: absolute; top: 1.6rem; bottom: 1.6rem; display: flex; flex-direction: column; justify-content: space-between; } .ds-pins-l { left: -15px; } .ds-pins-r { right: -15px; } .ds-pins i { display: block; width: 17px; height: 8px; border-radius: var(--radius-pad); background: var(--color-pad); opacity: 0.85; } .ds-face { padding: 3rem 2.5rem; } .ds-matrix { display: block; height: 4rem; background-image: radial-gradient(circle, var(--color-signal) 0 36%, transparent 40%); background-size: 0.57rem 0.57rem; filter: drop-shadow(0 0 3px color-mix(in oklab, var(--color-signal) 70%, transparent)); } .ds-cap { display: flex; justify-content: space-between; margin-top: 0.4rem; font-size: 0.8125rem; line-height: 1.2; color: var(--color-ink-2); }"
+    },
+    {
+      "name": "Day Tabs",
+      "kind": "custom",
+      "refersTo": "day-tabs",
+      "description": "The schedule's segmented control: one dark body with a raised cap on the selected day.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\"><button class=\"ds-tab\" role=\"tab\" aria-selected=\"true\"><span class=\"ds-tab-cap\"></span><b>Day 1</b><small>Saturday</small></button><button class=\"ds-tab\" role=\"tab\" aria-selected=\"false\"><b>Day 2</b><small>Sunday</small></button></div>",
+      "css": ".ds-tabs { display: grid; grid-template-columns: 1fr 1fr; width: 26rem; border: 1px solid var(--color-n6); border-radius: var(--radius-part); background: var(--color-n0); font-family: var(--font-sans); } .ds-tab { position: relative; display: flex; flex-direction: column; gap: 0.25rem; padding: 1.25rem 1.5rem; background: none; border: 0; text-align: left; color: var(--color-ink-2); cursor: pointer; transition: background-color 0.15s; } .ds-tab:hover { background: var(--color-n2); } .ds-tab b, .ds-tab small { position: relative; z-index: 2; } .ds-tab b { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.025em; } .ds-tab small { font-size: 0.875rem; color: var(--color-ink-3); } .ds-tab[aria-selected='true'] { color: var(--color-ink); } .ds-tab[aria-selected='true'] small { color: var(--color-ink-2); } .ds-tab-cap { position: absolute; inset: 0.25rem; z-index: 1; border: 2px solid var(--color-signal); border-radius: var(--radius-field); background: var(--color-n3); box-shadow: inset 0 2px 0 color-mix(in oklab, var(--color-ink) 10%, transparent), var(--shadow-lift); } .ds-tab:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "DIP Switch Row",
+      "kind": "custom",
+      "refersTo": "dip-switch",
+      "description": "An FAQ accordion trigger ending in a DIP switch; open slides the knob and lights the lamp.",
+      "html": "<button class=\"ds-dip-row\" data-state=\"open\"><span>Is it free?</span><span class=\"ds-dip\" aria-hidden=\"true\"><span class=\"ds-dip-knob\"></span></span></button>",
+      "css": ".ds-dip-row { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 1.25rem 0; background: none; border: 0; border-top: 1px solid var(--color-line); color: var(--color-ink); font-family: var(--font-sans); font-size: 1.0625rem; font-weight: 650; text-align: left; cursor: pointer; } .ds-dip { position: relative; flex: none; width: 2.5rem; height: 1.25rem; margin-left: 0.9rem; border: 1px solid var(--color-n7); border-radius: var(--radius-part); background: var(--color-n0); } .ds-dip::before { content: ''; position: absolute; left: -0.95rem; top: 50%; width: 6px; height: 6px; border-radius: 50%; background: var(--color-n5); transform: translateY(-50%); } .ds-dip-knob { position: absolute; top: 2px; left: 2px; width: 1.1rem; height: calc(100% - 4px); border-radius: var(--radius-field); background: var(--color-n8); transition: transform 0.25s var(--ease-expo), background-color 0.15s; } .ds-dip-row:hover .ds-dip-knob { background: var(--color-n9); } .ds-dip-row[data-state='open'] .ds-dip-knob { transform: translateX(1.15rem); background: var(--color-signal); } .ds-dip-row[data-state='open'] .ds-dip::before { background: var(--color-signal); box-shadow: 0 0 7px 1px color-mix(in oklab, var(--color-signal) 55%, transparent); } .ds-dip-row:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "LED Dot",
+      "kind": "chip",
+      "refersTo": "led-dot",
+      "description": "A lit LED (included tier benefits) or a dark ring (not included).",
+      "html": "<span class=\"ds-led on\" role=\"img\" aria-label=\"Included\"></span> <span class=\"ds-led\" role=\"img\" aria-label=\"Not included\"></span>",
+      "css": ".ds-led { display: inline-block; width: 0.7rem; height: 0.7rem; margin: 0 0.5rem; border: 1.5px solid var(--color-n6); border-radius: 50%; vertical-align: middle; } .ds-led.on { border-color: var(--color-signal); background: var(--color-signal); box-shadow: 0 0 8px 1px color-mix(in oklab, var(--color-signal) 50%, transparent); }"
+    },
+    {
+      "name": "Footprint Icon Button",
+      "kind": "card",
+      "refersTo": "icon-footprint",
+      "description": "A silkscreen footprint with two corner marks, here around a 44px icon control (copy, social, menu). Part icons and the organiser panel use the same footprint.",
+      "html": "<button class=\"ds-fp\" aria-label=\"Copy email address\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"8\" y=\"8\" width=\"14\" height=\"14\" rx=\"2\"/><path d=\"M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2\"/></svg></button>",
+      "css": ".ds-fp { position: relative; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; background: none; border: 1px solid color-mix(in oklab, var(--color-ink) 24%, transparent); color: var(--color-ink-2); cursor: pointer; transition: color 0.15s; } .ds-fp::before, .ds-fp::after { content: ''; position: absolute; width: 11px; height: 11px; border: 2px solid var(--color-ink); opacity: 0.85; pointer-events: none; } .ds-fp::before { top: -2px; left: -2px; border-right: 0; border-bottom: 0; } .ds-fp::after { right: -2px; bottom: -2px; border-left: 0; border-top: 0; } .ds-fp:hover { color: var(--color-signal); } .ds-fp:focus-visible { outline: 2px solid var(--color-signal); outline-offset: 3px; }"
+    },
+    {
+      "name": "Logo",
+      "kind": "custom",
+      "refersTo": "logo",
+      "description": "The original hack::peel logo as the live site draws it: Space Grotesk 700, the colons in copper cyan. The hero lockup adds the colons' glow and the copper bar centred under the name.",
+      "html": "<span class=\"ds-logo\"><span class=\"ds-logo-name\">hack<span class=\"ds-logo-colon\">::</span>peel</span><span class=\"ds-logo-bar\" aria-hidden=\"true\"></span></span>",
+      "css": ".ds-logo { display: inline-flex; flex-direction: column; align-items: center; font-family: var(--font-sans); font-size: 4rem; } .ds-logo-name { font-weight: 700; letter-spacing: -0.025em; line-height: 1; color: var(--color-ink); white-space: nowrap; } .ds-logo-colon { color: var(--color-signal); text-shadow: 0 0 10px color-mix(in oklab, var(--color-signal) 50%, transparent); } .ds-logo-bar { display: block; width: 1.34em; height: max(3px, 0.042em); margin-top: 0.17em; background: linear-gradient(90deg, transparent, var(--color-signal), transparent); }"
+    },
+    {
+      "name": "Part Icon",
+      "kind": "chip",
+      "refersTo": "part-icon",
+      "description": "One of the live site's lucide icons, in copper, on a 2.75rem silkscreen footprint; it leads each reason, value and principle.",
+      "html": "<span class=\"ds-part\" aria-hidden=\"true\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m16 18 6-6-6-6\"/><path d=\"m8 6-6 6 6 6\"/></svg></span>",
+      "css": ".ds-part { position: relative; display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem; border: 1px solid color-mix(in oklab, var(--color-ink) 24%, transparent); color: var(--color-signal); } .ds-part::before, .ds-part::after { content: ''; position: absolute; width: 11px; height: 11px; border: 2px solid var(--color-ink); opacity: 0.85; } .ds-part::before { top: -2px; left: -2px; border-right: 0; border-bottom: 0; } .ds-part::after { right: -2px; bottom: -2px; border-left: 0; border-top: 0; }"
+    },
+    {
+      "name": "Sponsor Reel",
+      "kind": "custom",
+      "refersTo": "sponsor-tape",
+      "description": "Carrier tape: n2 tape with sprocket holes every 16px along its top, a sponsor logo in each n0 pocket. Watermelon UI Marquee moves it; Scroll Fade holds it still when motion is off.",
+      "html": "<div class=\"ds-tape\"><div class=\"ds-cell\"><span class=\"ds-pocket\">Sponsor</span></div><div class=\"ds-cell\"><span class=\"ds-pocket\">Sponsor</span></div><div class=\"ds-cell\"><span class=\"ds-pocket\">Sponsor</span></div></div>",
+      "css": ".ds-tape { display: flex; overflow: hidden; border-block: 1px solid var(--color-n3); background: var(--color-n2); } .ds-cell { flex: none; width: 12rem; padding: 1.5rem 0.75rem 0.75rem; background-image: radial-gradient(circle at 8px 12px, var(--color-ground) 3.5px, transparent 4px); background-size: 16px 100%; background-repeat: repeat-x; } .ds-pocket { display: grid; place-items: center; height: 5.5rem; border: 1px solid var(--color-n4); border-radius: 3px; background: var(--color-n0); color: var(--color-ink); font-family: var(--font-sans); font-weight: 600; }"
+    },
+    {
+      "name": "Copper Bus",
+      "kind": "custom",
+      "refersTo": "copper-trace",
+      "description": "Buried copper: a bus of 2px n4 traces, 10px apart, turning 45 degrees and ending in staggered n5 vias; one trace carries a cyan pulse. BoardLayer lays these into every empty part of the page.",
+      "html": "<svg class=\"ds-bus\" width=\"320\" height=\"90\" viewBox=\"0 0 320 90\" fill=\"none\" aria-hidden=\"true\"><g class=\"t\"><path d=\"M320 20H190L150 60H30\"/><path d=\"M320 30H194L154 70H45\"/><path d=\"M320 40H198L158 80H30\"/></g><g class=\"v\"><circle cx=\"30\" cy=\"60\" r=\"4.5\"/><circle cx=\"45\" cy=\"70\" r=\"4.5\"/><circle cx=\"30\" cy=\"80\" r=\"4.5\"/></g><path class=\"p\" d=\"M320 30H194L154 70H45\"/></svg>",
+      "css": ".ds-bus .t path { stroke: var(--color-n4); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } .ds-bus .v circle { fill: var(--color-ground); stroke: var(--color-n5); stroke-width: 2; } .ds-bus .p { stroke: var(--color-signal); stroke-width: 2; stroke-linecap: round; stroke-dasharray: 26 400; stroke-dashoffset: -60; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Assembly Board, powered",
+    "overview": "The site is one circuit board with the power on. The page ground is matte soldermask, and under the mask you can see the board's copper wherever the board is empty: buses of traces that turn in 45-degree steps and drop into vias, laid around the content and never under a word. Type and outlines are white silkscreen. Copper cyan appears only where the board carries signal: the spine and its vias, LEDs, links, focus, a pulse running along a buried trace, the logo's colons, and the one copper pour. The brand is the original: the live site's hack::peel logo in Space Grotesk, which now sets every word, with JetBrains Mono for times, years, prices and step numbers. The clock chip stays the one signature, wired into the board on wide screens; the sponsors ride a reel of carrier tape; reasons, values and principles each lead with a part icon on a footprint.",
+    "keyCharacteristics": [
+      "One eleven-step neutral ramp at hue 238. Every grey is one of its steps.",
+      "Copper cyan is the only accent, and it only ever means signal: trace, via, LED, link, focus, pulse, pour, and the logo's colons.",
+      "A soldermask ground with copper routed under it through all the empty board (hero, page heads, under section headings, the margins), tone on tone; no noise, no grid, no glow blob.",
+      "The original hack::peel logo, and its face, Space Grotesk, for every word. JetBrains Mono only for times, years, prices and step numbers.",
+      "One signature part (the LED clock chip), wired into the board; the rest is a few working parts, footprints and plain type.",
+      "A power-up on a single expo ease, then a quiet live board (logo breath, pulses, the tape), all switchable off."
+    ],
+    "rules": [
+      {
+        "name": "The One Ramp Rule",
+        "body": "Every neutral is one of n0 to n10 at hue 238. Nothing else is grey. New surfaces pick a step; they never mix a new grey, a pure black, or a Tailwind gray scale.",
+        "section": "colors"
+      },
+      {
+        "name": "The Copper Means Signal Rule",
+        "body": "Cyan is drawn only where a board would carry current or light, plus the logo's colons. Buried copper at rest is neutral (n4); cyan travels along it only as a pulse. Cyan is never a decorative tint, background wash or panel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lit LED Rule",
+        "body": "Light is emitted only by a part that is on: a tier dot, a lit bar segment, the open DIP lamp, the clock matrix dots, a pulse's soft halo, and the logo's colons (the live site's own glow). A glow never spreads far past what emits it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono Is Tabular Rule",
+        "body": "JetBrains Mono appears only on times, years, prices and the registration step numbers. It is never used for prose, headings, buttons, labels over headings, or the stat figures.",
+        "section": "typography"
+      },
+      {
+        "name": "The Standing Part Rule",
+        "body": "A shadow means a part has height above the board. It is always cast down, with a negative spread so it stays under the part. Flat things (sections, rules, footprints, the stats strip, text) never cast one.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Three Radii Rule",
+        "body": "There are exactly three corner radii (1px, 2px, 3px), plus 50% for circles and 0 for switch bodies. Never set a larger radius; nothing on a board is pill-shaped or softly rounded.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Brand Face Rule",
+        "body": "Every word is Space Grotesk, the logo's face. Weight carries hierarchy (400 body, 500 to 600 labels and item heads, 700 heads and figures); heads are sentence case with tight negative tracking. No uppercase labels, no eyebrows.",
+        "section": "typography"
+      },
+      {
+        "name": "The Copper Under The Mask Rule",
+        "body": "The ground is a flat colour. The only marks on it are buried copper (the chip's fan-out, each page head's field, the patches and margin trunks), the hatch inside the copper pour, and the footer's edge fingers. Buried copper is tone on tone and unlabelled, fills the empty board rather than sitting in a corner of it, and keeps at least 34px clear of any words or parts (the page-head fields fade out instead).",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** use the original logo everywhere the name stands alone (nav, hero, footer, preview card), and set hack::peel as the logo inside heads.",
+      "**Do** set every word in Space Grotesk, and keep JetBrains Mono for times, years, prices and step numbers.",
+      "**Do** pick every neutral from the n0 to n10 ramp, by its role alias where one exists.",
+      "**Do** reach for the existing parts first: a plinth switch, a DIP switch, an LED dot or bar, a footprint, a part icon, buried copper, the tape, the socket.",
+      "**Do** fill the empty board with buried copper, tone on tone (n4 traces, n5 vias), 45-degree, unlabelled, keeping 34px clear of words and parts.",
+      "**Do** give anything that moves on its own a way to stop: pause on hover and focus, a visible control, and a still version for reduced motion and ATMOSPHERE_ON = false.",
+      "**Do** keep to the three radii, plus 50% for circles and 0 for switch bodies.",
+      "**Do** start each section on a board rule with a via on the spine."
+    ],
+    "donts": [
+      "**Don't** bring back part designators, pad rows under the nav, side pads on switches, mounting holes, test points, pinout leads, a decorative chip in a section's left column, or IC packages around plain content; the client found them weird.",
+      "**Don't** run copper under or across text, beside full-width rules (lists, tables), over the copper pour, label it, or light it at rest.",
+      "**Don't** bring back the timing-sheet atmosphere: no ambient glow blobs, radial washes, dot field, grid background, or shimmer sweep.",
+      "**Don't** add a gradient other than the bar under the hero logo, a second accent hue, or a cyan-tinted panel.",
+      "**Don't** glow anything that is not lit (an LED, a pulse, the logo's colons).",
+      "**Don't** use pill shapes, radii above 3px, soft rounded cards, or a card kit with drop shadows.",
+      "**Don't** use labels as kickers or eyebrows above headings.",
+      "**Don't** add looping motion that cannot be stopped, or animate anything when .calm is set."
+    ]
+  }
+}
